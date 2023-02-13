@@ -27,7 +27,6 @@ class MyApp extends StatelessWidget {
             return deviceLocale;
           }
         }
-
         return supportedLocales.first;
       },
       home: const HomePage(),
@@ -50,6 +49,7 @@ class HomePage extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               Text(
+                // AppLocalizations.of(context)!.translate("hello_msg"),
                 "hello_msg".tr(context),
                 style: const TextStyle(fontSize: 25),
                 textAlign: TextAlign.center,
